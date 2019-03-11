@@ -9,16 +9,17 @@
   <body>
     <div class="center">
       <div id="app">
-        <h1>Song lyric generator</h1>
-        <h3>Add an artist and a song</h3>
+        <h1>Song Lyric Generator</h1>
+        <h3>Search by Artist and Song Name</h3>
           <input v-model="artistName" placeholder="Artist name">
           <input v-model="songName" placeholder="Song name">
           <br>
-          <p>artistName is: {{ artistName }}</p>
-          <p>songName is: {{ songName }}</p>
+          <p>Artist: {{ artistName }}</p>
+          <p>Song: {{ songName }}</p>
           <br>
-          <button v-on:click="getLyrics">Get lyrics</button>
-          <p>{{ lyrics }}</p>
+          <button v-on:click="getLyrics">Get Lyrics</button>
+          <br>
+         <pre><p>{{ lyrics }}</p></pre>
       </div>
 
       <div class="footer">

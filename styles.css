@@ -2,11 +2,11 @@
   display: flex;
 align-items: center;
 justify-content: center;
-height: 100vh;
+/* height: 100vh; */
 }
 
 body {
-  background: linear-gradient(#FFEFBA, #FFFFFF);
+  background: linear-gradient(#FFEFBA, #FFFFFF) fixed;
 }
 
 .footer {
@@ -14,7 +14,6 @@ body {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #dfcc91;
    color: white;
    text-align: center;
 }
