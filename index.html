@@ -2,21 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles.css">
     <title>Creative Project 3</title>
   </head>
+
   <body>
-    <div id="app">
-      <h1>Song lyric generator</h1>
-      <h3>Add an artist and a song</h3>
-        <input v-model="artistName" placeholder="Artist name">
-        <input v-model="songName" placeholder="Song name">
-        <br>
-        <p>artistName is: {{ artistName }}</p>
-        <p>songName is: {{ songName }}</p>
-        <br>
-        <button v-on:click="getLyrics">Get lyrics</button>
-        <p>{{ lyrics }}</p>
-    </div>
+    <div class="center">
+      <div id="app">
+        <h1>Song lyric generator</h1>
+        <h3>Add an artist and a song</h3>
+          <input v-model="artistName" placeholder="Artist name">
+          <input v-model="songName" placeholder="Song name">
+          <br>
+          <p>artistName is: {{ artistName }}</p>
+          <p>songName is: {{ songName }}</p>
+          <br>
+          <button v-on:click="getLyrics">Get lyrics</button>
+          <p>{{ lyrics }}</p>
+      </div>
+
+      <div class="footer">
+        <p><a href="https://github.com/nateteahan/CreativeProject3.git"><img src="/GitHub_Logo.png" height="auto" width="80px"</img></p>
+      </div>
+
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
